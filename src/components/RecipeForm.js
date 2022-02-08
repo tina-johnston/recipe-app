@@ -5,19 +5,19 @@ const RecipeForm = () => {
   return (
     <Card>
       <form className={styles.form}>
-        <div>
+        <div className={styles.control}>
           <label htmlFor='title'>Recipe</label>
           <input type='text' required id='title' />
         </div>
-        <div>
+        <div className={styles.control}>
           <label htmlFor='image'>Recipe image</label>
           <input type='url' required id='image' />
         </div>
-        <div>
+        <div className={styles.control}>
           <label htmlFor='description'>description</label>
           <textarea rows='5' required id='description' />
         </div>
-        <div>
+        <div className={styles.actions}>
           <button>add recipe</button>
         </div>
       </form>
