@@ -3,13 +3,15 @@ import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { FavouritesProvider } from './components/store/favourites-contex';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-
+  <FavouritesProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </FavouritesProvider>,
   document.getElementById('root')
 );
 

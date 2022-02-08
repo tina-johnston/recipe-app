@@ -21,17 +21,12 @@
 
 .header li {
   margin-right: 0.4rem;
-  border-bottom: solid 1px black;
+  background-color: lightblue;
+  padding: 0.1rem;
 }
 
 .header a {
   text-decoration: none;
   font-size: 1.5rem;
   color: black;
-}
-
-.header a:hover,
-.header a:active {
-  color: blue;
-  border-bottom: solid 1px blue;
 }
